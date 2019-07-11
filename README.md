@@ -1,1 +1,1 @@
-# BrandShop-Vue.js-Node.js-
+# BrandShop-Vue.js-Node.js
