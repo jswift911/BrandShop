@@ -1,0 +1,22 @@
+{
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 9,
+            "product_name": "T-SHIRT_9",
+            "price": 90
+        },
+        {
+            "quantity": 1,
+            "id_product": 10,
+            "product_name": "T-SHIRT_10",
+            "price": 100
+        },
+        {
+            "quantity": 1,
+            "id_product": 17,
+            "product_name": "T-SHIRT_17",
+            "price": 17
+        }
+    ]
+}
