@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>INDEX</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container" id="app">
+		<header>
+			<div class="header">
+				<div class="container-header-flex">
+					<div class="header-left">
+						<a class="logo" href="index.html"><img class="logo-image" src="img/logo.png" alt="logo">BRAN<span class="red">D</span></a>
+						<div class="browse"><a class="browse-a" href="#">Browse</a>
+							<div class="drop-browse">
+								<div class="drop-flex-browse">
+									<h3 class="drop-h3-browse">WOMEN</h3>
+									<ul class="drop-link-browse">
+										<li><a href="#" class="drop-link">Dresses</a></li>
+										<li><a href="#" class="drop-link">Tops</a></li>
+										<li><a href="#" class="drop-link">Sweaters/Knits</a></li>
+										<li><a href="#" class="drop-link">Jackets/Coats</a></li>
+										<li><a href="#" class="drop-link">Blazers</a></li>
+										<li><a href="#" class="drop-link">Denim</a></li>
+										<li><a href="#" class="drop-link">Leggings/Pants</a></li>
+										<li><a href="#" class="drop-link">Skirts/Shorts</a></li>
+										<li><a href="#" class="drop-link">Accessories</a></li>
+									</ul>
+								</div>
+								<div class="drop-flex-browse">
+									<h3 class="drop-h3-browse drop-h3-browse-margin">MEN</h3>
+									<ul class="drop-link-browse">
+										<li><a href="#" class="drop-link">Tees/Tank</a></li>
+										<li><a href="#" class="drop-link">Shirts/Polos</a></li>
+										<li><a href="#" class="drop-link">Sweaters</a></li>
+										<li><a href="#" class="drop-link">Sweatshirts/Hoodies</a></li>
+										<li><a href="#" class="drop-link">Blazers</a></li>
+										<li><a href="#" class="drop-link">Jackets/vests</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search"><input class="search-text" type="text" placeholder="Search for Item..."></div>
+						<form action="#">
+							<input class="button-search" type="submit" value="">
+						</form>
+					</div>
+					<div class="header-right">
+						<div class="cart"><a href="cart.html"><img src="img/cart.svg" alt="cart"></a>
+							<cart :cart-items="cartItems"
+									:visibility="showCart"
+									@remove="remove"></cart>
+						<div class="my-account"><a href="#">My Account</a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<div class="menu">
+				<ul class="menu-all">
+					<li class="list-all"><a class="list-all-a" href="index.html">Home</a></li>
+					<li class="list-all"><a class="list-all-a" href="product.html">Man</a>
+						<div class="drop">
+							<div class="drop-flex">
+								<h3 class="drop-h3">WOMEN</h3>
+								<ul class="drop-link">
+									<li><a href="#" class="drop-link">Dresses</a></li>
+									<li><a href="#" class="drop-link">Tops</a></li>
+									<li><a href="#" class="drop-link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop-link">Jackets/Coats</a></li>
+									<li><a href="#" class="drop-link">Blazers</a></li>
+									<li><a href="#" class="drop-link">Denim</a></li>
+									<li><a href="#" class="drop-link">Leggings/Pants</a></li>
+									<li><a href="#" class="drop-link">Skirts/Shorts</a></li>
+									<li><a href="#" class="drop-link">Accessories</a></li>
+								</ul>
+							</div>
+							<div class="drop-flex-center">
+								<div class="drop-flex">
+									<h3 class="drop-h3">WOMEN</h3>
+									<ul class="drop-link">
+										<li><a href="#" class="drop-link">Dresses</a></li>
+										<li><a href="#" class="drop-link">Tops</a></li>
+										<li><a href="#" class="drop-link">Sweaters/Knits</a></li>
+										<li><a href="#" class="drop-link">Jackets/Coats</a></li>
+									</ul>
+								</div>
+								<div class="drop-flex">
+									<h3 class="drop-h3 drop-h3-margin">WOMEN</h3>
+									<ul class="drop-link">
+										<li><a href="#" class="drop-link">Dresses</a></li>
+										<li><a href="#" class="drop-link">Tops</a></li>
+										<li><a href="#" class="drop-link">Sweaters/Knits</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="drop-flex">
+								<h3 class="drop-h3">WOMEN</h3>
+								<ul class="drop-link">
+									<li><a href="#" class="drop-link">Dresses</a></li>
+									<li><a href="#" class="drop-link">Tops</a></li>
+									<li><a href="#" class="drop-link">Sweaters/Knits</a></li>
+									<li><a href="#" class="drop-link">Jackets/Coats</a></li>
+								</ul>
+								<div>
+									<img class="drop-img1" src="img/drop-img1.jpg" alt="drop=img">
+									<h4 class="super-sale">SUPER SALE!</h4>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="list-all"><a class="list-all-a" href="single.html">Women</a></li>
+					<li class="list-all"><a class="list-all-a" href="product.html">Kids</a></li>
+					<li class="list-all"><a class="list-all-a" href="product.html">Accoseriese</a></li>
+					<li class="list-all"><a class="list-all-a" href="product.html">Featured</a></li>
+					<li class="list-all"><a class="list-all-a" href="product.html">Hot Deals</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="slider">
+			<div class="slider-text">
+				<div class="slider-container">
+					<h3>THE BRAND</h3>
+					<p>OF LUXERIOUS <span class="pink">FASHION</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="skidki">
+			<a href="#"><div class="skidka1">
+				<div class="skidka1-text">
+					<h3>HOT DEAL</h3>
+					<p class="pink">FOR MEN</p>
+				</div>
+			</div></a>
+			<a href="#"><div class="skidka2">
+				<div class="skidka2-text">
+					<h3>30% OFFER</h3>
+					<p class="pink">WOMEN</p>
+				</div>
+			</div></a>
+				<a href="#"><div class="skidka3">
+				<div class="skidka3-text">
+					<h3>LUXIROUS & TRENDY</h3>
+					<p class="pink">ACCESORIES</p>
+				</div>
+			</div></a>
+					<a href="#"><div class="skidka4">
+				<div class="skidka4-text">
+					<h3>NEW ARRIVALS</h3>
+					<p class="pink">FOR KIDS</p>
+				</div>
+			</div></a>
+		</div>
+		<section>
+			<div class="featured-items">
+				<div class="featured-items-text">
+					<h3>Fetured Items</h3>
+					<p>Shop for items based on what we featured in this week</p>
+				</div>
+					<products :products="filtered" @add-product="addProduct"></products>
+				<div class="container-browse-all-product">
+					<div class="browse-all-product"><a href="product.html">Browse All Product</a></div>
+				</div>
+			</div>
+		</section>
+		<div class="women-container">
+			<div class="women">
+				<h1>30% <span class="pink">OFFER</span></h1>
+				<h2>FOR WOMEN</h2>
+			</div>
+			<div class="forms">
+				<div class="form1"><img src="img/Forma1.png" alt="forma1"> </div>
+				<div class="form-text1">
+					<h3>Free Delivery</h3>
+					<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+				<div class="form2"><img src="img/Forma2.png" alt="forma2"> </div>
+				<div class="form-text2">
+					<h3>Sales & discounts</h3>
+					<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+				<div class="form3"><img src="img/Forma3.png" alt="forma3"></div>
+				<div class="form-text3">
+					<h3>Quality assurance</h3>
+					<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+			</div>
+		</div>
+		<figure>
+			<div class="subscribe">
+				<div class="subscribe-container-left">
+					<img src="img/circle.png" alt="circle">
+					<div class="subscribe-left-text">
+						<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+						<h4>Bin Burhan</h4>
+						<h6>Dhaka, Bd</h6>
+					</div>
+					<div class="subscribe-container-right">
+						<h3>SUBSCRIBE</h3>
+						<h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+						<form action="#">
+							<input class="email" type="text" placeholder="Enter Your Email">
+							<input class="email-button" type="submit" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+		</figure>
+		<div class="info-block">
+			<div class="logo-brand-container">
+				<div class="logo-brand">
+					<a class="logo" href="#"><img class="logo-image" src="img/logo.png" alt="logo">BRAN<span class="red">D</span></a>
+				</div>
+				<p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p> <br>
+				<p>Efficiently plagiarize 24/365 action items and focused infomediaries.Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.</p>
+			</div>
+			<nav>
+				<div class="company-container">
+					<h3 class="info-h3">COMPANY</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li> <a href="#">Shop</a></li>
+						<li> <a href="#">About</a></li>
+						<li> <a href="#">How It Works</a></li>
+						<li> <a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav>
+				<div class="information-container">
+					<h3 class="info-h3">INFORMATION</h3>
+					<ul>
+						<li><a href="#">Tearms & Condition</a></li>
+						<li> <a href="#">Privacy Policy</a></li>
+						<li> <a href="#">How to Buy</a></li>
+						<li> <a href="#">How to Sell</a></li>
+						<li> <a href="#">Promotion</a></li>
+					</ul>
+				</div>
+			</nav>
+			<nav>
+				<div class="shop-conteiner">
+					<h3 class="info-h3">SHOP CATEGORY</h3>
+					<ul>
+						<li> <a href="#">Men</a></li>
+						<li> <a href="#">Women</a></li>
+						<li> <a href="#">Child</a></li>
+						<li> <a href="#">Apparel</a></li>
+						<li> <a href="#">Brows All</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<footer>
+			<div class="footer">
+				<span class="vse-prava">© 2017 Brand All Rights Reserved.</span>
+				<div class="social1 social-hover"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+				<div class="social2 social-hover"><a href="#"><i class="fab fa-twitter"></i></a></div>
+				<div class="social3 social-hover"></div>
+				<div class="social4 social-hover"><a href="#"><i class="fab fa-pinterest-p"></i></a></div>
+				<div class="social5 social-hover"><a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/vue.js"></script>
+	<script src="js/ProdComp.js"></script>
+	<script src="js/CartComp.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
